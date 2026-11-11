@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+# local data
+.aura-data/
+pgdata/
+# test output
+test-results/
+playwright-report/
+apps/web/e2e/.artifacts/
+*.tsbuildinfo

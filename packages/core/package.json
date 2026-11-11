@@ -1,0 +1,11 @@
+{
+  "name": "@aura/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AURA's brain: personality engine, memory manager, conversation orchestration. Isomorphic TypeScript — no DOM, no Node APIs.",
+  "exports": { ".": "./src/index.ts" },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": { "typecheck": "tsc -p tsconfig.json" }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "project-aura",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AURA — a virtual AI companion with a face, a voice, a personality and a memory.",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "npm run dev -w @aura/web",
+    "dev:server": "npm run dev -w @aura/server",
+    "build": "npm run build -w @aura/web && npm run build -w @aura/server",
+    "build:artifact": "npm run build:artifact -w @aura/web",
+    "start": "npm run start -w @aura/server",
+    "typecheck": "npm run typecheck -ws --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "npm run e2e -w @aura/web --",
+    "check": "npm run typecheck && npm run test && npm run build && npm run e2e"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "vitest": "^3.2.4",
+    "tsx": "^4.20.0",
+    "esbuild": "^0.25.9"
+  }
+}
